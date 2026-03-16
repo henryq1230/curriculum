@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Henry Quintero</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --navy: #0a192f;
+            --slate: #8892b0;
+            --light-slate: #a8b2d1;
+            --lightest-slate: #ccd6f6;
+            --white: #e6f1ff;
+            --green: #64ffda;
+            --font-sans: 'Inter', -apple-system, system-ui, sans-serif;
+            --font-mono: 'Space Mono', SFMono-Regular, Consolas, monospace;
+        }
+
+        @page {
+            size: A4;
+            margin: 0;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: var(--font-sans);
+            background-color: var(--white);
+            color: var(--navy);
+            line-height: 1.5;
+        }
+
+        .container {
+            width: 210mm;
+            min-height: 297mm;
+            padding: 20mm;
+            margin: 0 auto;
+            background-color: #fff;
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        /* Top Header */
+        header {
+            border-bottom: 2px solid var(--navy);
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 32px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            color: var(--navy);
+        }
+
+        .tagline {
+            font-family: var(--font-mono);
+            color: #0d2538;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+
+        .contact-info {
+            text-align: right;
+            font-size: 13px;
+            font-family: var(--font-mono);
+        }
+
+        .contact-info a {
+            color: var(--navy);
+            text-decoration: none;
+            display: block;
+            margin-bottom: 3px;
+        }
+
+        /* Section structure */
+        section {
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            font-family: var(--font-mono);
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #2b3a4a;
+            border-left: 4px solid var(--green);
+            padding-left: 10px;
+            margin-bottom: 12px;
+            background-color: rgba(100, 255, 218, 0.05);
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        p {
+            font-size: 14px;
+            margin: 0 0 10px 0;
+            color: #333;
+        }
+
+        /* Experience */
+        .job-item {
+            margin-bottom: 18px;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .job-company {
+            color: var(--navy);
+        }
+
+        .job-range {
+            font-family: var(--font-mono);
+            font-size: 12px;
+            color: var(--slate);
+        }
+
+        .job-role {
+            font-style: italic;
+            font-size: 13px;
+            color: #444;
+            margin-bottom: 5px;
+        }
+
+        ul.duties {
+            margin: 0;
+            padding-left: 20px;
+            font-size: 13px;
+            color: #444;
+        }
+
+        ul.duties li {
+            margin-bottom: 4px;
+        }
+
+        /* Projects */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .project-card {
+            border: 1px solid #ddd;
+            padding: 12px;
+            border-radius: 4px;
+        }
+
+        .project-title {
+            font-size: 14px;
+            font-weight: 700;
+            margin: 0 0 5px 0;
+            text-transform: capitalize;
+        }
+
+        .project-desc {
+            font-size: 12px;
+            color: #555;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+
+        .project-tech {
+            font-family: var(--font-mono);
+            font-size: 11px;
+            color: #444;
+        }
+
+        /* Skills block at bottom */
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .skill-tag {
+            font-family: var(--font-mono);
+            font-size: 12px;
+            background: #f0f4f8;
+            padding: 4px 10px;
+            border-radius: 4px;
+            border: 1px solid #d6e4f0;
+        }
+
+        @media print {
+            body {
+                background-color: #fff;
+            }
+
+            .container {
+                box-shadow: none;
+                margin: 0;
+                page-break-after: avoid;
+            }
+
+            h2 {
+                -webkit-print-color-adjust: exact;
+            }
+
+            .skill-tag {
+                -webkit-print-color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div style="display: flex; align-items: center; gap: 20px;">
+                <img src="src/assets/profile.jpg" alt="Henry Quintero"
+                    style="width: 70px; height: 70px; border-radius: 50%; object-fit: cover; border: 2px solid var(--navy);" />
+                <div>
+                    <h1>Henry Quintero</h1>
+                    <div class="tagline">Full Stack Developer</div>
+                </div>
+            </div>
+            <div class="contact-info">
+                <a href="mailto:henryq30@gmail.com" target="_blank">📧 henryq30@gmail.com</a>
+                <a href="tel:+50768576699" target="_blank">📱 +507 6857-6699</a>
+                <a href="https://henryquintero.dev" target="_blank">🌐 henryquintero.dev</a>
+                <a href="https://github.com/henryq1230" target="_blank">💻 github.com/henryq1230</a>
+                <a href="https://linkedin.com/in/henry-quintero-b8951320/" target="_blank">🔗 linkedin.com/in/henry-quintero-b8951320/</a>
+            </div>
+        </header>
+
+        <!-- ABOUT ME -->
+        <section>
+            <h2>About Me</h2>
+            <p>I’m a Full Stack Developer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, human-centered products at One80 Studios.</p>
+            <p>With a track record since 2009, I have been through various advertising agencies, startups, and e-commerce, leading the development of comprehensive solutions.</p>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section>
+            <h2>Where I’ve Worked</h2>
+
+            <div class="job-item">
+                <div class="job-header">
+                    <span class="job-company">One80 Studios</span>
+                    <span class="job-range">Oct 2015 — Present</span>
+                </div>
+                <div class="job-role">Web Developer / Entrepreneur</div>
+                <ul class="duties">
+                    <li>Write modern, performant, maintainable code for a diverse array of client and internal projects.</li>
+                    <li>Work with a variety of languages and frameworks such as React, Node.js, PHP, Laravel, and Flutter.</li>
+                    <li>Lead the design and development of comprehensive solutions, including mobile and web applications.</li>
+                </ul>
+            </div>
+
+            <div class="job-item">
+                <div class="job-header">
+                    <span class="job-company">Content Offshore</span>
+                    <span class="job-range">Nov 2012 — Sep 2015</span>
+                </div>
+                <div class="job-role">Web Developer</div>
+                <ul class="duties">
+                    <li>Developed and maintained e-commerce sites and payment gateway integrations.</li>
+                    <li>Managed multiple CMS platforms and delivered high-quality landing pages for clients.</li>
+                    <li>Collaborated with designers to translate visual concepts into functional web applications.</li>
+                </ul>
+            </div>
+
+            <div class="job-item">
+                <div class="job-header">
+                    <span class="job-company">Keyspot Networks, Inc.</span>
+                    <span class="job-range">Apr 2012 — Nov 2012</span>
+                </div>
+                <div class="job-role">Web Designer / Developer</div>
+                <ul class="duties">
+                    <li>Executed web design and development projects for various digital service and network initiatives.</li>
+                    <li>Ensured cross-browser compatibility and optimized web graphics for better performance.</li>
+                </ul>
+            </div>
+
+            <div class="job-item">
+                <div class="job-header">
+                    <span class="job-company">Mod Op</span>
+                    <span class="job-range">Jul 2011 — Mar 2012</span>
+                </div>
+                <div class="job-role">Web Developer</div>
+                <ul class="duties">
+                    <li>Collaborated on creative digital advertising campaigns, translating design mockups into interactive web assets.</li>
+                    <li>Developed responsive front-end components using modern web standards.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section>
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-title">Kar-Go</div>
+                    <div class="project-desc">Logistics and delivery platform with versions for drivers, delivery personnel, and clients.</div>
+                    <div class="project-tech">Flutter · Django · Postgres · Firebase</div>
+                </div>
+                <div class="project-card">
+                    <div class="project-title">Smart Stock</div>
+                    <div class="project-desc">Smart inventory and sales system (POS) with multi-tenant support and barcode scanning.</div>
+                    <div class="project-tech">Django · Python · Flutter · Postgres</div>
+                </div>
+                <div class="project-card">
+                    <div class="project-title">Biblia 365</div>
+                    <div class="project-desc">Spiritual app with daily readings, AI analysis, and gamification.</div>
+                    <div class="project-tech">Flutter · Firebase · Dart</div>
+                </div>
+                <div class="project-card">
+                    <div class="project-title">Clinic Manager</div>
+                    <div class="project-desc">Health management system for appointments, records, and administrative flows.</div>
+                    <div class="project-tech">Django · React · Postgres · Tailwind CSS</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section style="margin-top: 30px;">
+            <h2>Technologies & Skills</h2>
+            <div class="skills-list">
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">Flutter</span>
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">Django</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">PHP</span>
+                <span class="skill-tag">Laravel</span>
+                <span class="skill-tag">Postgres</span>
+                <span class="skill-tag">Firebase</span>
+                <span class="skill-tag">HTML5 / CSS3</span>
+                <span class="skill-tag">Vibe Coding (Claude, Antigravity + Stitch)</span>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
