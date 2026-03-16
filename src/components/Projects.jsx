@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import kargoImg from '../assets/projects/kargo.png';
-import bibliaImg from '../assets/projects/biblia365.png';
+import kargoImg from '../assets/projects/kar-go.jpg';
+import bibliaImg from '../assets/projects/biblia365.jpg';
 import smartstockImg from '../assets/projects/smartstock.png';
 import clinicmanagerImg from '../assets/projects/clinicmanager.png';
 
