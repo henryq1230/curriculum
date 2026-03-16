@@ -1,7 +1,7 @@
 # Henry Quintero
 
 > **Programador Full Stack**  
-> 📧 [henryq30@gmail.com](mailto:henryq30@gmail.com) | 🌐 [one80studios.com](https://www.one80studios.com/) | 🐙 [GitHub](https://github.com/henryq1230)
+> 📧 [henryq30@gmail.com](mailto:henryq30@gmail.com) | 🌐 [henryquintero.dev](https://henryquintero.dev) | 💻 [GitHub](https://github.com/henryquintero) | 🔗 [LinkedIn](https://linkedin.com/in/henry-quintero-b8951320/)
 
 ---
 
