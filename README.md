@@ -70,4 +70,5 @@ Sistema de gestión de la salud que optimiza las citas, los expedientes de los p
 - **Frontend**: `React`, `Flutter`, `HTML5`, `CSS3`, `Tailwind CSS`
 - **Backend**: `Node.js`, `Django`, `Python`, `PHP`, `Laravel`
 - **Bases de Datos & Servicios**: `Postgres`, `Firebase`
+- **Herramientas & DevOps**: `Docker`, `GitHub`
 - **Habilidades Blandas**: Liderazgo técnico, Emprendimiento, Diseño de Interfaces (UX/UI)
