@@ -9,7 +9,7 @@ const About = ({ t }) => (
         <p>{t.about.p2}</p>
         <p>{t.about.skills_title}</p>
         <ul className="skills-list staggered-list">
-          {['React.js', 'Node.js', 'PHP', 'Laravel', 'Flutter', 'Django', 'TypeScript', 'GitHub', 'Vibe Coding (Claude, Antigravity + Stitch)'].map(skill => (
+          {['React.js', 'Node.js', 'PHP', 'Laravel', 'Flutter', 'Django', 'TypeScript', 'GitHub', 'Tailwind CSS', 'Vibe Coding (Claude, Antigravity + Stitch)'].map(skill => (
             <li key={skill}>{skill}</li>
           ))}
         </ul>
