@@ -9,6 +9,7 @@ import About from './components/About';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
+import Particles from './components/Particles';
 
 // Hooks
 import { useScrollAnimation } from './hooks/useScrollAnimation';
@@ -31,6 +32,7 @@ function App() {
   return (
     <div className="container">
       <div className="spotlight"></div>
+      <Particles />
       <Header lang={lang} setLang={setLang} t={t} />
       <main className="fillHeight">
         <Hero t={t} />
