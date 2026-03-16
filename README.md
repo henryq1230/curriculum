@@ -1,7 +1,7 @@
 # Henry Quintero
 
 > **Full Stack Developer**  
-> 📧 [henryq30@gmail.com](mailto:henryq30@gmail.com) | 📱 [+507 6857-6699](tel:+50768576699) | 🌐 [henryquintero.dev](https://henryquintero.dev) | 💻 [GitHub](https://github.com/henryquintero) | 🔗 [LinkedIn](https://linkedin.com/in/henry-quintero-b8951320/)
+> 📧 [henryq30@gmail.com](mailto:henryq30@gmail.com) | 📱 [+507 6857-6699](tel:+50768576699) | 🌐 [henryquintero.dev](https://henryquintero.dev) | 💻 [GitHub](https://github.com/henryq1230) | 🔗 [LinkedIn](https://linkedin.com/in/henry-quintero-b8951320/)
 
 ---
 
