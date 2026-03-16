@@ -1,13 +1,13 @@
 # Henry Quintero
 
 > **Programador Full Stack**  
-> 📧 [henryq30@gmail.com](mailto:henryq30@gmail.com) | 🌐 [www.one80.com.pa](https://www.one80.com.pa/) | 🐙 [GitHub](https://github.com/henryq1230)
+> 📧 [henryq30@gmail.com](mailto:henryq30@gmail.com) | 🌐 [one80studios.com](https://www.one80studios.com/) | 🐙 [GitHub](https://github.com/henryq1230)
 
 ---
 
 ## 👨‍💻 Sobre Mí
 
-Soy ingeniero de software y emprendedor especializado en construir experiencias digitales excepcionales para la web y móviles. Mi enfoque principal es crear productos accesibles, performantes y centrados en el ser humano para resolver problemas reales.
+Soy un programador full stack especializado en construir experiencias digitales excepcionales para la web y móviles. Mi enfoque principal es crear productos accesibles, performantes y centrados en el ser humano para resolver problemas reales.
 
 Con trayectoria sólida desde 2009, he colaborado en agencias de publicidad, startups y grandes ecosistemas digitales, liderando el diseño y desarrollo de soluciones de software de inicio a fin.
 
@@ -57,7 +57,7 @@ Sistema inteligente de inventario y ventas (POS) con soporte multi-inquilino, pa
 
 ### 📖 **[Biblia 365](https://play.google.com/store/apps/details?id=com.biblia365.app)**
 Aplicación espiritual que ofrece lecturas diarias con análisis de versículos impulsado por IA, funciones de ludificación y recompensas.
-- **Tech Stack**: `Flutter`, `Firebase`, `Google Analytics`
+- **Tech Stack**: `Flutter`, `Firebase`, `Dart`
 
 ### 🏥 **Clinic Manager**
 Sistema de gestión de la salud que optimiza las citas, los expedientes de los pacientes y los flujos de trabajo administrativos con una interfaz moderna transparente.
@@ -69,5 +69,5 @@ Sistema de gestión de la salud que optimiza las citas, los expedientes de los p
 
 - **Frontend**: `React`, `Flutter`, `HTML5`, `CSS3`, `Tailwind CSS`
 - **Backend**: `Node.js`, `Django`, `Python`, `PHP`, `Laravel`
-- **Bases de Datos & Servicios**: `Postgres`, `Firebase`, `Google Analytics`
+- **Bases de Datos & Servicios**: `Postgres`, `Firebase`
 - **Habilidades Blandas**: Liderazgo técnico, Emprendimiento, Diseño de Interfaces (UX/UI)

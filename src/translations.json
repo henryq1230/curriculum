@@ -23,7 +23,7 @@
       "jobs": [
         {
           "company": "One80 Studios",
-          "url": "https://www.one80.com.pa/",
+          "url": "https://www.one80studios.com/",
           "role": "Web Developer / Entrepreneur",
           "range": "Oct 2015 — Present",
           "duties": [
@@ -93,7 +93,7 @@
         {
           "name": "biblia 365",
           "description": "A spiritual application providing daily readings with AI-powered verse analysis, engaging gamification features, and rewards.",
-          "tech": ["Flutter", "Firebase", "Google Analytics"],
+          "tech": ["Flutter", "Firebase", "Dart"],
           "link": "https://play.google.com/store/apps/details?id=com.biblia365.app"
         },
         {
@@ -121,7 +121,7 @@
       "greeting": "Hola, mi nombre es",
       "name": "Henry Quintero.",
       "tagline": "Construyo cosas para la web y móviles.",
-      "description": "Soy programador Full Stack especializado en construir (y ocasionalmente diseñar) experiencias digitales excepcionales. Actualmente, me enfoco en crear productos accesibles y centrados en el ser humano en One80 Studios."
+      "description": "Soy un programador full stack especializado en construir (y ocasionalmente diseñar) experiencias digitales excepcionales. Actualmente, me enfoco en crear productos accesibles y centrados en el ser humano en One80 Studios."
     },
     "about": {
       "title": "Sobre Mí",
@@ -134,7 +134,7 @@
       "jobs": [
         {
           "company": "One80 Studios",
-          "url": "https://www.one80.com.pa/",
+          "url": "https://www.one80studios.com/",
           "role": "Desarrollador Web / Emprendedor",
           "range": "Oct 2015 — Presente",
           "duties": [
@@ -204,7 +204,7 @@
         {
           "name": "biblia 365",
           "description": "Una aplicación espiritual que ofrece lecturas diarias con análisis de versículos impulsado por IA, funciones de gamificación y recompensas.",
-          "tech": ["Flutter", "Firebase", "Google Analytics"],
+          "tech": ["Flutter", "Firebase", "Dart"],
           "link": "https://play.google.com/store/apps/details?id=com.biblia365.app"
         },
         {
