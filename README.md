@@ -1,13 +1,13 @@
 # Henry Quintero
 
-> **Programador Full Stack**  
+> **Full Stack Developer**  
 > 📧 [henryq30@gmail.com](mailto:henryq30@gmail.com) | 📱 [+507 6857-6699](tel:+50768576699) | 🌐 [henryquintero.dev](https://henryquintero.dev) | 💻 [GitHub](https://github.com/henryquintero) | 🔗 [LinkedIn](https://linkedin.com/in/henry-quintero-b8951320/)
 
 ---
 
 ## 👨‍💻 Sobre Mí
 
-Soy un programador full stack especializado en construir experiencias digitales excepcionales para la web y móviles. Mi enfoque principal es crear productos accesibles, performantes y centrados en el ser humano para resolver problemas reales.
+Soy Full Stack Developer especializado en construir experiencias digitales excepcionales para la web y móviles. Mi enfoque principal es crear productos accesibles, performantes y centrados en el ser humano para resolver problemas reales.
 
 Con trayectoria sólida desde 2009, he colaborado en agencias de publicidad, startups y grandes ecosistemas digitales, liderando el diseño y desarrollo de soluciones de software de inicio a fin.
 
