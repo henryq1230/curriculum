@@ -1,6 +1,6 @@
 # Henry Quintero
 
-> **Ingeniero de Software y Emprendedor**  
+> **Programador Full Stack**  
 > 📧 [henryq30@gmail.com](mailto:henryq30@gmail.com) | 🌐 [www.one80.com.pa](https://www.one80.com.pa/) | 🐙 [GitHub](https://github.com/henryq1230)
 
 ---
