@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Henry Quintero</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --navy: #0a192f;
+            --slate: #8892b0;
+            --light-slate: #a8b2d1;
+            --lightest-slate: #ccd6f6;
+            --white: #e6f1ff;
+            --green: #64ffda;
+            --font-sans: 'Inter', -apple-system, system-ui, sans-serif;
+            --font-mono: 'Space Mono', SFMono-Regular, Consolas, monospace;
+        }
+
+        @page {
+            size: A4;
+            margin: 0;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: var(--font-sans);
+            background-color: var(--white);
+            color: var(--navy);
+            line-height: 1.5;
+        }
+
+        .container {
+            width: 210mm;
+            min-height: 297mm;
+            padding: 20mm;
+            margin: 0 auto;
+            background-color: #fff;
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        /* Top Header */
+        header {
+            border-bottom: 2px solid var(--navy);
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 32px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            color: var(--navy);
+        }
+
+        .tagline {
+            font-family: var(--font-mono);
+            color: #0d2538;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+
+        .contact-info {
+            text-align: right;
+            font-size: 13px;
+            font-family: var(--font-mono);
+        }
+
+        .contact-info a {
+            color: var(--navy);
+            text-decoration: none;
+            display: block;
+            margin-bottom: 3px;
+        }
+
+        /* Section structure */
+        section {
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            font-family: var(--font-mono);
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #2b3a4a;
+            border-left: 4px solid var(--green);
+            padding-left: 10px;
+            margin-bottom: 12px;
+            background-color: rgba(100, 255, 218, 0.05);
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        p {
+            font-size: 14px;
+            margin: 0 0 10px 0;
+            color: #333;
+        }
+
+        /* Experience */
+        .job-item {
+            margin-bottom: 18px;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .job-company {
+            color: var(--navy);
+        }
+
+        .job-range {
+            font-family: var(--font-mono);
+            font-size: 12px;
+            color: var(--slate);
+        }
+
+        .job-role {
+            font-style: italic;
+            font-size: 13px;
+            color: #444;
+            margin-bottom: 5px;
+        }
+
+        ul.duties {
+            margin: 0;
+            padding-left: 20px;
+            font-size: 13px;
+            color: #444;
+        }
+
+        ul.duties li {
+            margin-bottom: 4px;
+        }
+
+        /* Projects */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .project-card {
+            border: 1px solid #ddd;
+            padding: 12px;
+            border-radius: 4px;
+        }
+
+        .project-title {
+            font-size: 14px;
+            font-weight: 700;
+            margin: 0 0 5px 0;
+            text-transform: capitalize;
+        }
+
+        .project-desc {
+            font-size: 12px;
+            color: #555;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+
+        .project-tech {
+            font-family: var(--font-mono);
+            font-size: 11px;
+            color: #444;
+        }
+
+        /* Skills block at bottom */
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .skill-tag {
+            font-family: var(--font-mono);
+            font-size: 12px;
+            background: #f0f4f8;
+            padding: 4px 10px;
+            border-radius: 4px;
+            border: 1px solid #d6e4f0;
+        }
+
+        @media print {
+            body { background-color: #fff; }
+            .container {
+                box-shadow: none;
+                margin: 0;
+                page-break-after: avoid;
+            }
+            h2 { -webkit-print-color-adjust: exact; }
+            .skill-tag { -webkit-print-color-adjust: exact; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div>
+                <h1>Henry Quintero</h1>
+                <div class="tagline">Ingeniero de Software y Emprendedor</div>
+            </div>
+            <div class="contact-info">
+                <a href="mailto:henryq30@gmail.com">henryq30@gmail.com</a>
+                <a href="https://www.one80.com.pa/">www.one80.com.pa</a>
+                <a href="https://github.com/henryq1230">github.com/henryq1230</a>
+            </div>
+        </header>
+
+        <!-- SOBRE MÍ -->
+        <section>
+            <h2>Sobre Mí</h2>
+            <p>Soy ingeniero de software y emprendedor especializado en construir experiencias digitales excepcionales para la web y móviles. Mi enfoque es crear productos accesibles y centrados en el ser humano.</p>
+            <p>Con trayectoria desde 2009, he pasado por diversas agencias de publicidad, startups y e-commerce, liderando el desarrollo de soluciones integrales.</p>
+        </section>
+
+        <!-- EXPERIENCIA -->
+        <section>
+            <h2>Experiencia Laboral</h2>
+            
+            <div class="job-item">
+                <div class="job-header">
+                    <span class="job-company">One80 Studios</span>
+                    <span class="job-range">Oct 2015 — Presente</span>
+                </div>
+                <div class="job-role">Desarrollador Web / Emprendedor</div>
+                <ul class="duties">
+                    <li>Escribo código moderno, eficiente y fácil de mantener para una gama diversa de proyectos de clientes e internos.</li>
+                    <li>Trabajo con una variedad de lenguajes y marcos como React, Node.js, PHP, Laravel y Flutter.</li>
+                    <li>Lidero el diseño y desarrollo de soluciones integrales, incluyendo aplicaciones móviles y web.</li>
+                </ul>
+            </div>
+
+            <div class="job-item">
+                <div class="job-header">
+                    <span class="job-company">Content Offshore</span>
+                    <span class="job-range">Nov 2012 — Sep 2015</span>
+                </div>
+                <div class="job-role">Desarrollador Web</div>
+                <ul class="duties">
+                    <li>Desarrollé y mantuve sitios de comercio electrónico e integraciones de pasarelas de pago.</li>
+                    <li>Administré múltiples plataformas CMS y entregué páginas de destino de alta calidad para clientes internacionales.</li>
+                    <li>Colaboré con diseñadores para traducir conceptos visuales en aplicaciones web funcionales.</li>
+                </ul>
+            </div>
+
+            <div class="job-item">
+                <div class="job-header">
+                    <span class="job-company">Keyspot Networks, Inc.</span>
+                    <span class="job-range">Abr 2012 — Nov 2012</span>
+                </div>
+                <div class="job-role">Diseñador / Desarrollador Web</div>
+                <ul class="duties">
+                    <li>Ejecuté proyectos de diseño y desarrollo web para diversas iniciativas de redes y servicios digitales.</li>
+                    <li>Aseguré la compatibilidad entre navegadores y optimicé gráficos web para un mejor rendimiento.</li>
+                </ul>
+            </div>
+
+            <div class="job-item">
+                <div class="job-header">
+                    <span class="job-company">Mod Op</span>
+                    <span class="job-range">Jul 2011 — Mar 2012</span>
+                </div>
+                <div class="job-role">Desarrollador Web</div>
+                <ul class="duties">
+                    <li>Colaboré en campañas creativas de publicidad digital, traduciendo maquetas de diseño en activos web interactivos.</li>
+                    <li>Desarrollé componentes front-end responsivos utilizando estándares web modernos.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- PROYECTOS -->
+        <section>
+            <h2>Proyectos Destacados</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-title">Kar-Go</div>
+                    <div class="project-desc">Plataforma de logística y entrega con versiones para conductores, repartidores y clientes.</div>
+                    <div class="project-tech">Flutter · Django · Postgres · Firebase</div>
+                </div>
+                <div class="project-card">
+                    <div class="project-title">Smart Stock</div>
+                    <div class="project-desc">Sistema inteligente de inventario y ventas (POS) con soporte multi-inquilino y barcode scanning.</div>
+                    <div class="project-tech">Django · Python · Flutter · Postgres</div>
+                </div>
+                <div class="project-card">
+                    <div class="project-title">Biblia 365</div>
+                    <div class="project-desc">Aplicación espiritual con lecturas diarias, análisis por IA y gamificación.</div>
+                    <div class="project-tech">Flutter · Firebase · Google Analytics</div>
+                </div>
+                <div class="project-card">
+                    <div class="project-title">Clinic Manager</div>
+                    <div class="project-desc">Sistema de gestión de salud para citas, expedientes y flujos administrativos.</div>
+                    <div class="project-tech">Django · React · Postgres · Tailwind CSS</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- HABILIDADES -->
+        <section style="margin-top: 30px;">
+            <h2>Tecnologías & Habilidades</h2>
+            <div class="skills-list">
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">Flutter</span>
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">Django</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">PHP</span>
+                <span class="skill-tag">Laravel</span>
+                <span class="skill-tag">Postgres</span>
+                <span class="skill-tag">Firebase</span>
+                <span class="skill-tag">HTML5 / CSS3</span>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
