@@ -1,16 +1,73 @@
-# React + Vite
+# Henry Quintero
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> **Ingeniero de Software y Emprendedor**  
+> 📧 [henryq30@gmail.com](mailto:henryq30@gmail.com) | 🌐 [www.one80.com.pa](https://www.one80.com.pa/) | 🐙 [GitHub](https://github.com/henryq1230)
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 👨‍💻 Sobre Mí
 
-## React Compiler
+Soy ingeniero de software y emprendedor especializado en construir experiencias digitales excepcionales para la web y móviles. Mi enfoque principal es crear productos accesibles, performantes y centrados en el ser humano para resolver problemas reales.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Con trayectoria sólida desde 2009, he colaborado en agencias de publicidad, startups y grandes ecosistemas digitales, liderando el diseño y desarrollo de soluciones de software de inicio a fin.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 💼 Experiencia Laboral
+
+### **One80 Studios** | *Desarrollador Web / Emprendedor*
+**Oct 2015 — Presente**
+- Escribo código moderno, eficiente y fácil de mantener para una gama diversa de proyectos de clientes e internos.
+- Trabajo con una variedad de lenguajes y marcos como **React**, **Node.js**, **PHP**, **Laravel** y **Flutter**.
+- Lidero el diseño y desarrollo de soluciones integrales, incluyendo aplicaciones móviles y web.
+
+---
+
+### **Content Offshore** | *Desarrollador Web*
+**Nov 2012 — Sep 2015**
+- Desarrollé y mantuve sitios de comercio electrónico e integraciones robustas de pasarelas de pago.
+- Administré múltiples plataformas CMS y entregué páginas de destino de alta calidad para clientes internacionales.
+- Colaboré con diseñadores para traducir conceptos visuales en aplicaciones web completamente funcionales.
+
+---
+
+### **Keyspot Networks, Inc.** | *Diseñador / Desarrollador Web*
+**Abr 2012 — Nov 2012**
+- Ejecuté proyectos de diseño y desarrollo web para diversas iniciativas de redes y servicios digitales.
+- Aseguré la compatibilidad entre navegadores y optimicé gráficos web para un mejor rendimiento general.
+
+---
+
+### **Mod Op** | *Desarrollador Web*
+**Jul 2011 — Mar 2012**
+- Colaboré en campañas creativas de publicidad digital, traduciendo maquetas de diseño en activos web interactivos.
+- Desarrollé componentes front-end responsivos utilizando estándares web modernos.
+
+---
+
+## 🚀 Proyectos Destacados
+
+### 📦 **[Kar-Go](https://play.google.com/store/apps/details?id=com.kargo.app)**
+Plataforma integral de logística y entrega que cuenta con versiones dedicadas para conductores de transporte, repartidores de comida y clientes finales para una experiencia fluida.
+- **Tech Stack**: `Flutter`, `Django`, `Postgres`, `Firebase`
+
+### 📊 **Smart Stock**
+Sistema inteligente de inventario y ventas (POS) con soporte multi-inquilino, paneles de control detallados y herramientas de escaneo de códigos de barras.
+- **Tech Stack**: `Django`, `Python`, `Flutter`, `Postgres`
+
+### 📖 **[Biblia 365](https://play.google.com/store/apps/details?id=com.biblia365.app)**
+Aplicación espiritual que ofrece lecturas diarias con análisis de versículos impulsado por IA, funciones de ludificación y recompensas.
+- **Tech Stack**: `Flutter`, `Firebase`, `Google Analytics`
+
+### 🏥 **Clinic Manager**
+Sistema de gestión de la salud que optimiza las citas, los expedientes de los pacientes y los flujos de trabajo administrativos con una interfaz moderna transparente.
+- **Tech Stack**: `Django`, `React`, `Postgres`, `Tailwind CSS`
+
+---
+
+## 🛠️ Tecnologías & Habilidades
+
+- **Frontend**: `React`, `Flutter`, `HTML5`, `CSS3`, `Tailwind CSS`
+- **Backend**: `Node.js`, `Django`, `Python`, `PHP`, `Laravel`
+- **Bases de Datos & Servicios**: `Postgres`, `Firebase`, `Google Analytics`
+- **Habilidades Blandas**: Liderazgo técnico, Emprendimiento, Diseño de Interfaces (UX/UI)
