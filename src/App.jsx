@@ -11,14 +11,31 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Particles from './components/Particles';
 
+// Slides Component
+import SlidesApp from './components/Slides/SlidesApp';
+
 // Hooks
 import { useScrollAnimation } from './hooks/useScrollAnimation';
 
 function App() {
   const [lang, setLang] = useState('en');
   const t = translations[lang];
+  const [isSlidesRoute, setIsSlidesRoute] = useState(false);
 
   useScrollAnimation();
+
+  useEffect(() => {
+    // Check if the current URL matches the slides route
+    const checkRoute = () => {
+      setIsSlidesRoute(window.location.pathname.startsWith('/programacion-con-ia'));
+    };
+
+    checkRoute();
+    
+    // Listen to popstate for browser navigation support
+    window.addEventListener('popstate', checkRoute);
+    return () => window.removeEventListener('popstate', checkRoute);
+  }, []);
 
   useEffect(() => {
     const handleMouseMove = (e) => {
@@ -28,6 +45,10 @@ function App() {
     window.addEventListener('mousemove', handleMouseMove);
     return () => window.removeEventListener('mousemove', handleMouseMove);
   }, []);
+
+  if (isSlidesRoute) {
+    return <SlidesApp />;
+  }
 
   return (
     <div className="container">
@@ -49,3 +70,4 @@ function App() {
 }
 
 export default App;
+

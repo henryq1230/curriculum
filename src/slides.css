@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Additional presentation-specific classes and transitions can go here */
+.slide-bg-gradient {
+  background: radial-gradient(circle at 50% 50%, #0c1524 0%, #030712 100%);
+}
+
+.slides-glow {
+  box-shadow: 0 0 40px -10px rgba(16, 185, 129, 0.2);
+}
+
+.text-glow {
+  text-shadow: 0 0 20px rgba(16, 185, 129, 0.4);
+}
