@@ -100,15 +100,19 @@ const SlidesApp = () => {
   return (
     <div 
       id="slides-root" 
-      className="slide-bg-gradient min-h-screen text-slate-100 flex flex-col justify-between font-sans select-none overflow-hidden"
+      className="min-h-screen text-slate-100 flex flex-col justify-between select-none overflow-hidden relative"
       style={{ colorScheme: 'dark' }}
     >
+      {/* Background ambient glows similar to Kar-Go deck */}
+      <div className="slides-ambient-1"></div>
+      <div className="slides-ambient-2"></div>
+
       {/* Top Bar */}
-      <header className="px-6 py-4 flex justify-between items-center border-b border-slate-800/40 bg-slate-950/40 backdrop-blur-md z-20">
+      <header className="px-6 py-4 flex justify-between items-center border-b border-white/5 bg-[#020918]/80 backdrop-blur-md z-20">
         <div className="flex items-center gap-2">
-          <Layers className="w-5 h-5 text-emerald-400" />
-          <span className="font-mono text-sm font-semibold tracking-wider text-slate-300">
-            PROGRAMAR EN LA ERA DE LA IA
+          <Layers className="w-4 h-4 text-emerald-400" />
+          <span className="font-mono text-xs font-bold tracking-widest text-slate-400">
+            PROG ERA IA // PRESENTACIÓN
           </span>
         </div>
         
@@ -116,24 +120,24 @@ const SlidesApp = () => {
           <button 
             onClick={toggleFullscreen}
             title={isFullscreen ? "Salir de pantalla completa" : "Pantalla completa (F11)"}
-            className="p-2 hover:bg-slate-800/80 rounded-lg transition-colors border border-slate-800 text-slate-400 hover:text-white cursor-pointer"
+            className="p-2 hover:bg-white/5 rounded-lg transition-colors border border-white/5 text-slate-400 hover:text-white cursor-pointer"
           >
-            {isFullscreen ? <Minimize2 className="w-4 h-4" /> : <Maximize2 className="w-4 h-4" />}
+            {isFullscreen ? <Minimize2 className="w-3.5 h-3.5" /> : <Maximize2 className="w-3.5 h-3.5" />}
           </button>
           
           <button 
             onClick={goHome}
             title="Volver a la Web Principal"
-            className="p-2 hover:bg-slate-800/80 rounded-lg transition-colors border border-slate-800 text-slate-400 hover:text-white flex items-center gap-1.5 text-xs font-mono cursor-pointer"
+            className="p-2 hover:bg-white/5 rounded-lg transition-colors border border-white/5 text-slate-400 hover:text-white flex items-center gap-1.5 text-[10px] font-mono cursor-pointer"
           >
-            <Home className="w-4 h-4" />
+            <Home className="w-3.5 h-3.5" />
             <span className="hidden sm:inline">INICIO</span>
           </button>
         </div>
       </header>
 
       {/* Slide Content Area */}
-      <main className="flex-1 flex items-center justify-center p-6 md:p-12 relative overflow-hidden">
+      <main className="flex-1 flex items-center justify-center p-6 md:p-10 relative overflow-hidden z-10">
         <div className="w-full max-w-5xl h-full flex items-center justify-center">
           <AnimatePresence mode="wait" custom={direction}>
             <Slide key={currentSlide} direction={direction}>
@@ -144,22 +148,22 @@ const SlidesApp = () => {
       </main>
 
       {/* Navigation Controller Footer */}
-      <footer className="px-6 py-5 border-t border-slate-800/40 bg-slate-950/40 backdrop-blur-md flex justify-between items-center z-20">
+      <footer className="px-6 py-4 border-t border-white/5 bg-[#020918]/80 backdrop-blur-md flex justify-between items-center z-20">
         {/* Progress Bar / Dots */}
         <div className="flex items-center gap-4">
-          <div className="text-sm font-mono text-slate-400">
-            {currentSlide + 1} <span className="text-slate-600">/</span> {totalSlides}
+          <div className="text-xs font-mono text-slate-400">
+            {currentSlide + 1} <span className="text-slate-650">/</span> {totalSlides}
           </div>
           
-          <div className="hidden md:flex gap-1.5">
+          <div className="hidden md:flex gap-2">
             {slides.map((_, idx) => (
               <button
                 key={idx}
                 onClick={() => navigateTo(idx)}
-                className={`w-2.5 h-2.5 rounded-full transition-all duration-300 cursor-pointer ${
+                className={`w-2 h-2 rounded-full transition-all duration-300 cursor-pointer ${
                   currentSlide === idx 
-                    ? 'bg-emerald-400 w-6' 
-                    : 'bg-slate-700 hover:bg-slate-500'
+                    ? 'bg-emerald-400 w-5 shadow-lg shadow-emerald-500/20' 
+                    : 'bg-slate-800 hover:bg-slate-600'
                 }`}
                 title={`Ir a diapositiva ${idx + 1}`}
               />
@@ -168,31 +172,31 @@ const SlidesApp = () => {
         </div>
 
         {/* Action Navigation Buttons */}
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2.5">
           <button
             onClick={prev}
             disabled={currentSlide === 0}
-            className={`px-4 py-2 rounded-lg border transition-all flex items-center gap-1 text-sm font-medium cursor-pointer ${
+            className={`px-3.5 py-1.5 rounded-lg border text-xs font-semibold tracking-wider uppercase transition-all flex items-center gap-1 cursor-pointer ${
               currentSlide === 0
-                ? 'bg-slate-900/20 border-slate-900 text-slate-700 cursor-not-allowed'
-                : 'bg-slate-900 border-slate-800 hover:border-slate-700 text-slate-300 hover:text-white'
+                ? 'bg-transparent border-transparent text-slate-700 cursor-not-allowed'
+                : 'bg-white/5 border-white/5 hover:border-white/10 text-slate-300 hover:text-white'
             }`}
           >
-            <ArrowLeft className="w-4 h-4" />
+            <ArrowLeft className="w-3.5 h-3.5" />
             Anterior
           </button>
           
           <button
             onClick={next}
             disabled={currentSlide === totalSlides - 1}
-            className={`px-4 py-2 rounded-lg border transition-all flex items-center gap-1 text-sm font-bold cursor-pointer ${
+            className={`px-3.5 py-1.5 rounded-lg border text-xs font-bold tracking-wider uppercase transition-all flex items-center gap-1 cursor-pointer ${
               currentSlide === totalSlides - 1
-                ? 'bg-slate-900/20 border-slate-900 text-slate-700 cursor-not-allowed'
+                ? 'bg-transparent border-transparent text-slate-700 cursor-not-allowed'
                 : 'bg-emerald-500 border-emerald-600 text-slate-950 hover:bg-emerald-400 shadow-md shadow-emerald-500/10'
             }`}
           >
             Siguiente
-            <ArrowRight className="w-4 h-4" />
+            <ArrowRight className="w-3.5 h-3.5" />
           </button>
         </div>
       </footer>
