@@ -21,24 +21,15 @@ export const TitleSlide = () => (
     <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl -z-10 animate-pulse"></div>
     <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl -z-10 animate-pulse" style={{ animationDelay: '2s' }}></div>
     
-    <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-sm font-semibold mb-6 animate-bounce">
-      <Sparkles className="w-4 h-4" />
-      Charla Universitaria
-    </div>
-    
-    <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-white max-w-4xl leading-tight mb-6">
+    <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-white max-w-4xl leading-tight mb-6 mt-12">
       Programar en la Era de la IA:
       <span className="block mt-2 bg-gradient-to-r from-emerald-400 via-teal-300 to-blue-500 bg-clip-text text-transparent text-glow">
         Cómo crear aplicaciones 10 veces más rápido
       </span>
     </h1>
     
-    <div className="w-24 h-1 bg-gradient-to-r from-emerald-500 to-blue-500 rounded-full mb-8"></div>
+    <div className="w-24 h-1 bg-gradient-to-r from-emerald-500 to-blue-500 rounded-full mb-12"></div>
     
-    <p className="text-xl md:text-2xl text-slate-300 max-w-2xl font-medium mb-12">
-      Agenda de 45 minutos.
-    </p>
-
     <div className="text-sm text-slate-500 font-mono">
       Usa las flechas del teclado <span className="px-2 py-1 bg-slate-800 rounded text-slate-300">←</span> <span className="px-2 py-1 bg-slate-800 rounded text-slate-300">→</span> para navegar
     </div>
