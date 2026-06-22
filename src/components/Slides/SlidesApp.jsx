@@ -38,9 +38,9 @@ const SlidesApp = () => {
     <IntroSlide />,
     <ConceptSlide />,
     <FlowSlide />,
+    <FutureSlide />,
     <ToolsGridSlide />,
     <DemoSlide />,
-    <FutureSlide />,
     <SkillsSlide />,
     <ClosingSlide />
   ];

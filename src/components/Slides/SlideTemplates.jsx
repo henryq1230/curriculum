@@ -17,7 +17,7 @@ import {
   BookOpen,
   Palette,
   CloudLightning,
-  Image as ImageIcon,
+  ImageIcon,
   CheckCircle,
   GitBranch
 } from 'lucide-react';
@@ -125,7 +125,7 @@ export const IntroSlide = () => (
   </div>
 );
 
-// Slide 3: Flujo de Trabajo Moderno
+// Slide 3: Flujo de Trabajo Moderno (NotebookLM -> Gemini -> Stitch -> Antigravity -> Railway)
 export const ConceptSlide = () => (
   <div className="flex flex-col justify-between h-full">
     <SlideHeader subtitle="02 / FLOW" title="El flujo de desarrollo práctico" />
@@ -162,9 +162,40 @@ export const ConceptSlide = () => (
         </div>
       </div>
 
-      {/* Step 2: Stitch */}
-      <div className="bg-[#051129]/40 border border-slate-800 rounded-xl p-4 flex flex-col justify-between relative overflow-hidden transition-all duration-300 hover:border-blue-500/20">
+      {/* Step 2: Gemini */}
+      <div className="bg-[#051129]/40 border border-slate-800 rounded-xl p-4 flex flex-col justify-between relative overflow-hidden transition-all duration-300 hover:border-purple-500/20">
         <span className="text-2xl font-black text-slate-800/35 font-mono absolute top-2 right-2">2</span>
+        <div className="flex flex-col h-full justify-between">
+          <div>
+            <div className="flex items-center gap-1.5 mb-3">
+              <Layers className="w-5 h-5 text-purple-400" />
+              <h3 className="text-xs font-bold text-white uppercase tracking-wider">Gemini</h3>
+            </div>
+            <p className="text-[10px] text-slate-400 leading-relaxed mb-4">
+              Generación autónoma de logotipos, iconos y assets gráficos de la app.
+            </p>
+          </div>
+          {/* Logo Representation */}
+          <div className="w-full flex justify-center py-3 bg-slate-950/60 rounded-xl border border-slate-900/80 shadow-inner mt-auto">
+            <svg viewBox="0 0 100 35" className="h-9 w-auto fill-none">
+              {/* Google Gemini sparkles */}
+              <path d="M22 6C22 13 25 16 32 16C25 16 22 19 22 26C22 19 19 16 12 16C19 16 22 13 22 6Z" fill="url(#geminiGrad)"/>
+              <path d="M30 22C30 25 31 26 34 26C31 26 30 27 30 30C30 27 29 26 26 26C29 26 30 25 30 22Z" fill="#a78bfa"/>
+              <defs>
+                <linearGradient id="geminiGrad" x1="12" y1="6" x2="32" y2="26" gradientUnits="userSpaceOnUse">
+                  <stop stopColor="#60a5fa"/>
+                  <stop offset="1" stopColor="#c084fc"/>
+                </linearGradient>
+              </defs>
+              <text x="40" y="22" fill="#ffffff" fontSize="12" fontWeight="900" fontFamily="sans-serif" letterSpacing="0.5">Gemini</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      {/* Step 3: Stitch */}
+      <div className="bg-[#051129]/40 border border-slate-800 rounded-xl p-4 flex flex-col justify-between relative overflow-hidden transition-all duration-300 hover:border-blue-500/20">
+        <span className="text-2xl font-black text-slate-800/35 font-mono absolute top-2 right-2">3</span>
         <div className="flex flex-col h-full justify-between">
           <div>
             <div className="flex items-center gap-1.5 mb-3">
@@ -188,9 +219,9 @@ export const ConceptSlide = () => (
         </div>
       </div>
 
-      {/* Step 3: Antigravity */}
+      {/* Step 4: Antigravity */}
       <div className="bg-[#051129]/40 border border-slate-800 rounded-xl p-4 flex flex-col justify-between relative overflow-hidden transition-all duration-300 hover:border-teal-500/20">
-        <span className="text-2xl font-black text-slate-800/35 font-mono absolute top-2 right-2">3</span>
+        <span className="text-2xl font-black text-slate-800/35 font-mono absolute top-2 right-2">4</span>
         <div className="flex flex-col h-full justify-between">
           <div>
             <div className="flex items-center gap-1.5 mb-3">
@@ -209,37 +240,6 @@ export const ConceptSlide = () => (
               <circle cx="22" cy="14" r="3" fill="#14b8a6"/>
               <text x="38" y="21" fill="#ffffff" fontSize="9" fontWeight="900" fontFamily="sans-serif" letterSpacing="0.5">antigravity</text>
               <text x="38" y="28" fill="#14b8a6" fontSize="6.5" fontWeight="bold" fontFamily="mono" letterSpacing="0.5">AI ENGINE</text>
-            </svg>
-          </div>
-        </div>
-      </div>
-
-      {/* Step 4: Gemini */}
-      <div className="bg-[#051129]/40 border border-slate-800 rounded-xl p-4 flex flex-col justify-between relative overflow-hidden transition-all duration-300 hover:border-purple-500/20">
-        <span className="text-2xl font-black text-slate-800/35 font-mono absolute top-2 right-2">4</span>
-        <div className="flex flex-col h-full justify-between">
-          <div>
-            <div className="flex items-center gap-1.5 mb-3">
-              <ImageIcon className="w-5 h-5 text-purple-400" />
-              <h3 className="text-xs font-bold text-white uppercase tracking-wider">Gemini</h3>
-            </div>
-            <p className="text-[10px] text-slate-400 leading-relaxed mb-4">
-              Generación autónoma de logotipos, iconos y assets gráficos de la app.
-            </p>
-          </div>
-          {/* Logo Representation */}
-          <div className="w-full flex justify-center py-3 bg-slate-950/60 rounded-xl border border-slate-900/80 shadow-inner mt-auto">
-            <svg viewBox="0 0 100 35" className="h-9 w-auto fill-none">
-              {/* Google Gemini sparkles */}
-              <path d="M22 6C22 13 25 16 32 16C25 16 22 19 22 26C22 19 19 16 12 16C19 16 22 13 22 6Z" fill="url(#geminiGrad)"/>
-              <path d="M30 22C30 25 31 26 34 26C31 26 30 27 30 30C30 27 29 26 26 26C29 26 30 25 30 22Z" fill="#a78bfa"/>
-              <defs>
-                <linearGradient id="geminiGrad" x1="12" y1="6" x2="32" y2="26" gradientUnits="userSpaceOnUse">
-                  <stop stopColor="#60a5fa"/>
-                  <stop offset="1" stopColor="#c084fc"/>
-                </linearGradient>
-              </defs>
-              <text x="40" y="22" fill="#ffffff" fontSize="12" fontWeight="900" fontFamily="sans-serif" letterSpacing="0.5">Gemini</text>
             </svg>
           </div>
         </div>
@@ -311,10 +311,38 @@ export const FlowSlide = () => (
   </div>
 );
 
-// Slide 5: Paso 2 - Stitch (Diseño de UI)
+// Slide 5: Paso 2 - Gemini (Generación de Assets y Logos)
+export const FutureSlide = () => (
+  <div className="flex flex-col justify-between h-full">
+    <SlideHeader subtitle="04 / PASO 2: ASSETS & CREATIVIDAD" title=" Gemini: Generación de Identidad Visual" />
+
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center flex-1 my-auto">
+      {/* Simulation Box */}
+      <div className="bg-[#051129]/40 border border-slate-800 rounded-2xl p-5 flex flex-col justify-center items-center min-h-[220px] relative overflow-hidden">
+        <div className="w-16 h-16 rounded-2xl bg-gradient-to-tr from-emerald-500 to-teal-400 border border-emerald-400/30 flex items-center justify-center text-slate-950 font-black text-2xl shadow-xl shadow-emerald-500/10 animate-pulse">
+          GD
+        </div>
+        <span className="text-[9px] text-slate-400 mt-4 font-mono font-bold">Logo: Garaje Digital</span>
+        <span className="text-[8px] text-slate-500 font-mono italic">Generado en 2.8s</span>
+      </div>
+
+      {/* Description details */}
+      <div className="space-y-4">
+        <h3 className="text-white font-bold text-sm tracking-wide">Creación de Recursos Multimedia</h3>
+        <ul className="slides-premium-list text-xs space-y-2">
+          <li><strong>Generación de Logotipo</strong>: Le pedimos a Gemini crear la imagen de marca de la app con el prompt adecuado.</li>
+          <li><strong>Diseño de Assets e Iconos</strong>: Creamos imágenes representativas de coches y alertas para enriquecer las pantallas.</li>
+          <li><strong>Integración en el Proyecto</strong>: Guardamos los assets autogenerados en la carpeta pública del código.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+);
+
+// Slide 6: Paso 3 - Stitch (Diseño de UI)
 export const ToolsGridSlide = () => (
   <div className="flex flex-col justify-between h-full">
-    <SlideHeader subtitle="04 / PASO 2: DISEÑO VISUAL" title=" Stitch: Prototipado Interactivo" />
+    <SlideHeader subtitle="05 / PASO 3: DISEÑO VISUAL" title=" Stitch: Prototipado Interactivo" />
 
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center flex-1 my-auto">
       {/* Visual Simulation */}
@@ -355,10 +383,10 @@ export const ToolsGridSlide = () => (
   </div>
 );
 
-// Slide 6: Paso 3 - Antigravity (MCP / Export)
+// Slide 7: Paso 4 - Antigravity (MCP / Export)
 export const DemoSlide = () => (
   <div className="flex flex-col justify-between h-full">
-    <SlideHeader subtitle="05 / PASO 3: CÓDIGO & LÓGICA" title=" Antigravity: Integración del Diseño" />
+    <SlideHeader subtitle="06 / PASO 4: CÓDIGO & LÓGICA" title=" Antigravity: Integración del Diseño" />
 
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center flex-1 my-auto">
       {/* Description */}
@@ -387,34 +415,6 @@ export const DemoSlide = () => (
   </div>
 );
 
-// Slide 7: Paso 4 - Gemini (Generación de Assets y Logos)
-export const FutureSlide = () => (
-  <div className="flex flex-col justify-between h-full">
-    <SlideHeader subtitle="06 / PASO 4: ASSETS & CREATIVIDAD" title=" Gemini: Generación de Identidad Visual" />
-
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center flex-1 my-auto">
-      {/* Simulation Box */}
-      <div className="bg-[#051129]/40 border border-slate-800 rounded-2xl p-5 flex flex-col justify-center items-center min-h-[220px] relative overflow-hidden">
-        <div className="w-16 h-16 rounded-2xl bg-gradient-to-tr from-emerald-500 to-teal-400 border border-emerald-400/30 flex items-center justify-center text-slate-950 font-black text-2xl shadow-xl shadow-emerald-500/10 animate-pulse">
-          GD
-        </div>
-        <span className="text-[9px] text-slate-400 mt-4 font-mono font-bold">Logo: Garaje Digital</span>
-        <span className="text-[8px] text-slate-500 font-mono italic">Generado en 2.8s</span>
-      </div>
-
-      {/* Description details */}
-      <div className="space-y-4">
-        <h3 className="text-white font-bold text-sm tracking-wide">Creación de Recursos Multimedia</h3>
-        <ul className="slides-premium-list text-xs space-y-2">
-          <li><strong>Generación de Logotipo</strong>: Le pedimos a Gemini crear la imagen de marca de la app con el prompt adecuado.</li>
-          <li><strong>Diseño de Assets e Iconos</strong>: Creamos imágenes representativas de coches y alertas para enriquecer las pantallas.</li>
-          <li><strong>Integración en el Proyecto</strong>: Guardamos los assets autogenerados en la carpeta pública del código.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-);
-
 // Slide 8: Paso 5 - Railway (Despliegue y Git)
 export const SkillsSlide = () => (
   <div className="flex flex-col justify-between h-full">
@@ -437,7 +437,7 @@ export const SkillsSlide = () => (
           <span className="text-emerald-400 font-bold flex items-center gap-1">
             <GitBranch className="w-3.5 h-3.5" /> git push origin master
           </span>
-          <span className="text-slate-500 font-bold font-mono">✓ Éxito</span>
+          <span className="text-slate-550 font-bold font-mono">✓ Éxito</span>
         </div>
         
         {/* Railway Status representation */}
