@@ -31,19 +31,9 @@ const SlideHeader = ({ subtitle, title }) => (
 
 // Slide 1: Title / Cover
 export const TitleSlide = () => (
-  <div className="flex flex-col justify-between h-full py-6 text-center px-4 relative overflow-hidden">
-    {/* Floating accent elements */}
-    <div className="absolute top-10 left-10 border border-emerald-500/10 px-3 py-1 rounded-full text-[10px] font-mono text-emerald-400/80 bg-emerald-500/5">
-      v1.0.0 // 2026
-    </div>
-
+  <div className="flex flex-col justify-between h-full py-12 text-center px-4 relative overflow-hidden">
     <div className="flex-1 flex flex-col justify-center items-center">
-      <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold mb-6">
-        <Sparkles className="w-3.5 h-3.5" />
-        CONFERENCIA INNOVACIÓN
-      </div>
-      
-      <h1 className="text-3xl md:text-5xl lg:text-6xl font-black tracking-tight text-white max-w-4xl leading-tight mb-8">
+      <h1 className="text-4xl md:text-6xl font-black tracking-tight text-white max-w-4xl leading-tight mb-8">
         Programar en la Era de la IA:
         <span className="block mt-2 bg-gradient-to-r from-emerald-400 via-teal-300 to-blue-500 bg-clip-text text-transparent text-shadow-md">
           Cómo crear aplicaciones 10 veces más rápido
@@ -53,18 +43,8 @@ export const TitleSlide = () => (
       <div className="w-20 h-1 bg-gradient-to-r from-emerald-500 to-blue-500 rounded-full mb-8"></div>
     </div>
 
-    {/* Metadata Footer similar to Kar-Go deck */}
-    <div className="flex justify-between items-center w-full max-w-3xl mx-auto border-t border-white/5 pt-6 text-left">
-      <div className="flex items-center gap-3">
-        <div className="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-emerald-400">
-          <Clock className="w-5 h-5" />
-        </div>
-        <div>
-          <p className="text-[9px] text-slate-500 uppercase font-mono tracking-wider font-bold">Duración</p>
-          <p className="text-xs font-bold text-white">Charla de 45 min</p>
-        </div>
-      </div>
-
+    {/* Metadata Footer without duration */}
+    <div className="flex justify-center gap-12 items-center w-full max-w-3xl mx-auto border-t border-white/5 pt-6 text-left">
       <div className="flex items-center gap-3">
         <div className="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-emerald-400">
           <User className="w-5 h-5" />
