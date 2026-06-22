@@ -132,63 +132,142 @@ export const ConceptSlide = () => (
 
     {/* Step Timeline */}
     <div className="grid grid-cols-1 md:grid-cols-5 gap-4 flex-1 my-auto items-stretch">
-      {/* Step 1 */}
-      <div className="bg-[#051129]/40 border border-slate-800 rounded-xl p-4 flex flex-col justify-between relative overflow-hidden">
-        <span className="text-3xl font-black text-slate-800/35 font-mono absolute top-2 right-2">1</span>
-        <div>
-          <BookOpen className="w-6 h-6 text-emerald-400 mb-3" />
-          <h3 className="text-xs font-bold text-white uppercase tracking-wider mb-1">NotebookLM</h3>
-          <p className="text-[10px] text-slate-450 leading-relaxed">
-            Planificación de la app y generación de prompts de UI optimizados.
-          </p>
+      {/* Step 1: NotebookLM */}
+      <div className="bg-[#051129]/40 border border-slate-800 rounded-xl p-4 flex flex-col justify-between relative overflow-hidden transition-all duration-300 hover:border-emerald-500/20">
+        <span className="text-2xl font-black text-slate-800/35 font-mono absolute top-2 right-2">1</span>
+        <div className="flex flex-col h-full justify-between">
+          <div>
+            <div className="flex items-center gap-1.5 mb-3">
+              <BookOpen className="w-5 h-5 text-emerald-400" />
+              <h3 className="text-xs font-bold text-white uppercase tracking-wider">NotebookLM</h3>
+            </div>
+            <p className="text-[10px] text-slate-400 leading-relaxed mb-4">
+              Planificación de la app y generación de prompts de UI optimizados.
+            </p>
+          </div>
+          {/* Logo Representation */}
+          <div className="w-full flex justify-center py-3 bg-slate-950/60 rounded-xl border border-slate-900/80 shadow-inner mt-auto">
+            <svg viewBox="0 0 100 35" className="h-9 w-auto fill-none">
+              <rect x="15" y="5" width="22" height="25" rx="3" fill="#10b981" fillOpacity="0.15" stroke="#10b981" strokeWidth="1.5"/>
+              <line x1="22" y1="12" x2="30" y2="12" stroke="#10b981" strokeWidth="1.5" strokeLinecap="round"/>
+              <line x1="22" y1="17" x2="30" y2="17" stroke="#10b981" strokeWidth="1.5" strokeLinecap="round"/>
+              <line x1="22" y1="22" x2="27" y2="22" stroke="#10b981" strokeWidth="1.5" strokeLinecap="round"/>
+              <circle cx="15" cy="12" r="1.5" fill="#10b981"/>
+              <circle cx="15" cy="17" r="1.5" fill="#10b981"/>
+              <circle cx="15" cy="22" r="1.5" fill="#10b981"/>
+              <text x="44" y="21" fill="#ffffff" fontSize="9" fontWeight="800" fontFamily="sans-serif" letterSpacing="0.5">Notebook</text>
+              <text x="44" y="29" fill="#10b981" fontSize="7" fontWeight="bold" fontFamily="sans-serif" letterSpacing="0.5">LM</text>
+            </svg>
+          </div>
         </div>
       </div>
 
-      {/* Step 2 */}
-      <div className="bg-[#051129]/40 border border-slate-800 rounded-xl p-4 flex flex-col justify-between relative overflow-hidden">
-        <span className="text-3xl font-black text-slate-800/35 font-mono absolute top-2 right-2">2</span>
-        <div>
-          <Palette className="w-6 h-6 text-blue-400 mb-3" />
-          <h3 className="text-xs font-bold text-white uppercase tracking-wider mb-1">Stitch</h3>
-          <p className="text-[10px] text-slate-450 leading-relaxed">
-            Diseño e iteración visual de la interfaz (UI Mockups) mediante prompts.
-          </p>
+      {/* Step 2: Stitch */}
+      <div className="bg-[#051129]/40 border border-slate-800 rounded-xl p-4 flex flex-col justify-between relative overflow-hidden transition-all duration-300 hover:border-blue-500/20">
+        <span className="text-2xl font-black text-slate-800/35 font-mono absolute top-2 right-2">2</span>
+        <div className="flex flex-col h-full justify-between">
+          <div>
+            <div className="flex items-center gap-1.5 mb-3">
+              <Palette className="w-5 h-5 text-blue-400" />
+              <h3 className="text-xs font-bold text-white uppercase tracking-wider">Stitch</h3>
+            </div>
+            <p className="text-[10px] text-slate-400 leading-relaxed mb-4">
+              Diseño e iteración visual de la interfaz (UI Mockups) mediante prompts.
+            </p>
+          </div>
+          {/* Logo Representation */}
+          <div className="w-full flex justify-center py-3 bg-slate-950/60 rounded-xl border border-slate-900/80 shadow-inner mt-auto">
+            <svg viewBox="0 0 100 35" className="h-9 w-auto fill-none">
+              <path d="M15 17C20 7, 25 27, 30 17" stroke="#3b82f6" strokeWidth="2" strokeLinecap="round"/>
+              <circle cx="15" cy="17" r="2.5" fill="#3b82f6"/>
+              <circle cx="30" cy="17" r="2.5" fill="#60a5fa"/>
+              <path d="M22.5 12L22.5 22" stroke="#60a5fa" strokeWidth="1.5" strokeDasharray="2 2"/>
+              <text x="40" y="22" fill="#ffffff" fontSize="12" fontWeight="900" fontFamily="sans-serif" letterSpacing="1">stitch</text>
+            </svg>
+          </div>
         </div>
       </div>
 
-      {/* Step 3 */}
-      <div className="bg-[#051129]/40 border border-slate-800 rounded-xl p-4 flex flex-col justify-between relative overflow-hidden">
-        <span className="text-3xl font-black text-slate-800/35 font-mono absolute top-2 right-2">3</span>
-        <div>
-          <Code className="w-6 h-6 text-teal-400 mb-3" />
-          <h3 className="text-xs font-bold text-white uppercase tracking-wider mb-1">Antigravity</h3>
-          <p className="text-[10px] text-slate-450 leading-relaxed">
-            Generación del código a partir del diseño de Stitch (MCP o Export).
-          </p>
+      {/* Step 3: Antigravity */}
+      <div className="bg-[#051129]/40 border border-slate-800 rounded-xl p-4 flex flex-col justify-between relative overflow-hidden transition-all duration-300 hover:border-teal-500/20">
+        <span className="text-2xl font-black text-slate-800/35 font-mono absolute top-2 right-2">3</span>
+        <div className="flex flex-col h-full justify-between">
+          <div>
+            <div className="flex items-center gap-1.5 mb-3">
+              <Code className="w-5 h-5 text-teal-400" />
+              <h3 className="text-xs font-bold text-white uppercase tracking-wider">Antigravity</h3>
+            </div>
+            <p className="text-[10px] text-slate-400 leading-relaxed mb-4">
+              Generación del código a partir del diseño de Stitch (MCP o Export).
+            </p>
+          </div>
+          {/* Logo Representation */}
+          <div className="w-full flex justify-center py-3 bg-slate-950/60 rounded-xl border border-slate-900/80 shadow-inner mt-auto">
+            <svg viewBox="0 0 110 35" className="h-9 w-auto fill-none">
+              {/* Futuristic floating triangles logo */}
+              <path d="M22 8L12 25L32 25Z" stroke="#06b6d4" strokeWidth="1.5" strokeLinejoin="round"/>
+              <circle cx="22" cy="14" r="3" fill="#14b8a6"/>
+              <text x="38" y="21" fill="#ffffff" fontSize="9" fontWeight="900" fontFamily="sans-serif" letterSpacing="0.5">antigravity</text>
+              <text x="38" y="28" fill="#14b8a6" fontSize="6.5" fontWeight="bold" fontFamily="mono" letterSpacing="0.5">AI ENGINE</text>
+            </svg>
+          </div>
         </div>
       </div>
 
-      {/* Step 4 */}
-      <div className="bg-[#051129]/40 border border-slate-800 rounded-xl p-4 flex flex-col justify-between relative overflow-hidden">
-        <span className="text-3xl font-black text-slate-800/35 font-mono absolute top-2 right-2">4</span>
-        <div>
-          <ImageIcon className="w-6 h-6 text-purple-400 mb-3" />
-          <h3 className="text-xs font-bold text-white uppercase tracking-wider mb-1">Gemini</h3>
-          <p className="text-[10px] text-slate-450 leading-relaxed">
-            Generación autónoma de logotipos, iconos y assets gráficos de la app.
-          </p>
+      {/* Step 4: Gemini */}
+      <div className="bg-[#051129]/40 border border-slate-800 rounded-xl p-4 flex flex-col justify-between relative overflow-hidden transition-all duration-300 hover:border-purple-500/20">
+        <span className="text-2xl font-black text-slate-800/35 font-mono absolute top-2 right-2">4</span>
+        <div className="flex flex-col h-full justify-between">
+          <div>
+            <div className="flex items-center gap-1.5 mb-3">
+              <ImageIcon className="w-5 h-5 text-purple-400" />
+              <h3 className="text-xs font-bold text-white uppercase tracking-wider">Gemini</h3>
+            </div>
+            <p className="text-[10px] text-slate-400 leading-relaxed mb-4">
+              Generación autónoma de logotipos, iconos y assets gráficos de la app.
+            </p>
+          </div>
+          {/* Logo Representation */}
+          <div className="w-full flex justify-center py-3 bg-slate-950/60 rounded-xl border border-slate-900/80 shadow-inner mt-auto">
+            <svg viewBox="0 0 100 35" className="h-9 w-auto fill-none">
+              {/* Google Gemini sparkles */}
+              <path d="M22 6C22 13 25 16 32 16C25 16 22 19 22 26C22 19 19 16 12 16C19 16 22 13 22 6Z" fill="url(#geminiGrad)"/>
+              <path d="M30 22C30 25 31 26 34 26C31 26 30 27 30 30C30 27 29 26 26 26C29 26 30 25 30 22Z" fill="#a78bfa"/>
+              <defs>
+                <linearGradient id="geminiGrad" x1="12" y1="6" x2="32" y2="26" gradientUnits="userSpaceOnUse">
+                  <stop stopColor="#60a5fa"/>
+                  <stop offset="1" stopColor="#c084fc"/>
+                </linearGradient>
+              </defs>
+              <text x="40" y="22" fill="#ffffff" fontSize="12" fontWeight="900" fontFamily="sans-serif" letterSpacing="0.5">Gemini</text>
+            </svg>
+          </div>
         </div>
       </div>
 
-      {/* Step 5 */}
-      <div className="bg-[#051129]/40 border border-slate-800 rounded-xl p-4 flex flex-col justify-between relative overflow-hidden">
-        <span className="text-3xl font-black text-slate-800/35 font-mono absolute top-2 right-2">5</span>
-        <div>
-          <CloudLightning className="w-6 h-6 text-cyan-400 mb-3" />
-          <h3 className="text-xs font-bold text-white uppercase tracking-wider mb-1">Railway</h3>
-          <p className="text-[10px] text-slate-450 leading-relaxed">
-            Sincronización con el repositorio Git y despliegue a producción.
-          </p>
+      {/* Step 5: Railway */}
+      <div className="bg-[#051129]/40 border border-slate-800 rounded-xl p-4 flex flex-col justify-between relative overflow-hidden transition-all duration-300 hover:border-cyan-500/20">
+        <span className="text-2xl font-black text-slate-800/35 font-mono absolute top-2 right-2">5</span>
+        <div className="flex flex-col h-full justify-between">
+          <div>
+            <div className="flex items-center gap-1.5 mb-3">
+              <CloudLightning className="w-5 h-5 text-cyan-400" />
+              <h3 className="text-xs font-bold text-white uppercase tracking-wider">Railway</h3>
+            </div>
+            <p className="text-[10px] text-slate-400 leading-relaxed mb-4">
+              Sincronización con el repositorio Git y despliegue a producción.
+            </p>
+          </div>
+          {/* Logo Representation */}
+          <div className="w-full flex justify-center py-3 bg-slate-950/60 rounded-xl border border-slate-900/80 shadow-inner mt-auto">
+            <svg viewBox="0 0 100 35" className="h-9 w-auto fill-none">
+              {/* Railway tracks logo */}
+              <rect x="12" y="10" width="18" height="15" rx="3" fill="#ec4899" fillOpacity="0.1" stroke="#ec4899" strokeWidth="1.5"/>
+              <path d="M16 14L26 21" stroke="#ec4899" strokeWidth="2" strokeLinecap="round"/>
+              <path d="M16 21L26 14" stroke="#ec4899" strokeWidth="2" strokeLinecap="round"/>
+              <text x="36" y="22" fill="#ffffff" fontSize="11" fontWeight="900" fontFamily="sans-serif" letterSpacing="0.5">RAILWAY</text>
+            </svg>
+          </div>
         </div>
       </div>
     </div>
